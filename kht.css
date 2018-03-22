@@ -1,0 +1,166 @@
+@media screen and (min-width:600px) {
+    nav {
+        float: left;
+        width: 100%;
+    }
+    section {
+        margin-left: 25%
+    }
+}
+@media screen and (max-width:599px) {
+    nav li {
+        display: inline;
+    }
+}
+body {
+    margin: 0 auto;
+    max-width: 960px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+    text-align: justify;
+}
+
+header, footer, aside, section {
+    display: block;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #E0E0E0;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a:active {
+    background-color: #262042;
+    color: #cadaea;
+}
+
+aside {
+    display: table-cell;
+    width: 160px;
+    background: #E0E0E0;
+}
+
+#kht-body {
+    display: table;
+}
+
+/* dropdown menu to select topic */
+.dropdown-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dropdown-topics {
+    position: relative;
+    display: inline-block;
+}
+
+.topics-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.topics-content a {
+    color: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.topics-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-topics:hover .topics-content {
+    display: block;
+}
+
+.dropdown-topics:hover .dropdown-button {
+    background-color: #3e8e41;
+}
+
+/* end of dropdown */
+
+.kht-doc {
+    display: table-cell;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 810px;
+}
+
+#product {
+    display: table-cell;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+#development {
+    display: table-row;
+}
+
+.doc-row {
+    display: table-row;
+    margin: 6px;
+}
+.doc-column1 {
+    display: table-cell;
+    padding-left: 6px;
+    margin: 6px;
+}
+.doc-column2 {
+    display: table-cell;
+    padding-left: 6px;
+    margin: 6px;
+}
+
+.khtrow {
+    display: table-row;
+    border: solid 1px red;
+}
+
+.implementation {
+    display: table-cell;
+    padding-left: 6px;
+    background: #fcd6d6;
+}
+
+.support {
+    display: table-cell;
+    padding-left: 6px;
+    background: #effff0;
+}
+
+footer {
+    background: #E0E0E0;
+    padding: 6px;
+    text-align: center;
+    color: #ffffff;
+}

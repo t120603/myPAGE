@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Imitation is largely useless without creativity !!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css" />
+    <link rel="stylesheet" type="text/css" href="mystyle.css" />
+</head>
+<body>
+    <!-- define navigation/menu -->
+    <div class="topnav" id="Topnav">
+        <a href="index.html">Home</a>
+        <a href="repos.html">Repos</a>
+        <a href="knowhow.html">KhT</a>
+        <a href="prj-cch.html">Project</a>
+        <a href="prod-tool.html">Env&amp;Tool</a>
+    </div>
+    <!-- define sidebar / aside -->
+    <div class="w3-content w3-section" style="max-width:800px">
+        <img class="mySlides w3-animate-fading" src="images/page1.png" style="width:100%">
+        <img class="mySlides w3-animate-fading" src="images/page2.png" style="width:100%">
+        <img class="mySlides w3-animate-fading" src="images/page3.png" style="width:100%">
+    </div>
+    <script>
+        var idx = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+
+            for (i=0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            idx ++;
+            if (idx > x.length) { idx = 1; }
+            x[idx-1].style.display = "block";
+            setTimeout(carousel, 9000);
+        }
+    </script>
+    <!-- footer -->
+    <footer>
+        <center><font color="#000080" size="2">
+            <img src="images/avatar.png" height="24" width="24" align="middle" />
+            Copyright &copy; Philip Wu. All Rights Reserved.</font><br>
+        <font color="#000080" size="1"><b>Last Modification:</b><i>
+            <script language="JavaScript">
+            document.write(document.lastModified)
+            </script></i>
+        </font><br>
+    </footer>
+</body>
+</html>
